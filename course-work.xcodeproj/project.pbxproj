@@ -7,23 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C52BD0AD29671CCD00DB1490 /* FoodCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52BD0AC29671CCD00DB1490 /* FoodCard.swift */; };
+		C52BD0AF29671D3E00DB1490 /* InfoTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52BD0AE29671D3E00DB1490 /* InfoTag.swift */; };
+		C52BD0B129672BDB00DB1490 /* FoodDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52BD0B029672BDB00DB1490 /* FoodDetailedViewController.swift */; };
+		C52BD0B62967422300DB1490 /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52BD0B52967422300DB1490 /* HeaderViewController.swift */; };
+		C533630A296078B6001FBB41 /* FoodListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5336309296078B6001FBB41 /* FoodListTableViewController.swift */; };
+		C5417B482952193C0008D0A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5417B472952193C0008D0A5 /* HomeViewController.swift */; };
+		C5518BFF2968543B0064A951 /* TabHeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5518BFE2968543B0064A951 /* TabHeadersViewController.swift */; };
+		C5518C01296867320064A951 /* WebContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5518C00296867320064A951 /* WebContentViewController.swift */; };
+		C55F98B02958E20A003F80F5 /* func.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F98AF2958E20A003F80F5 /* func.swift */; };
+		C57D66F029614AFC00016040 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57D66EF29614AFC00016040 /* Spacer.swift */; };
+		C5A16E3E295F667F00583448 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A16E3D295F667F00583448 /* GreetingViewController.swift */; };
+		C5A16E40295F681400583448 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A16E3F295F681400583448 /* BannerViewController.swift */; };
+		C5A16E42295F6FD800583448 /* WaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A16E41295F6FD800583448 /* WaveViewController.swift */; };
+		C5A16E44295F73B600583448 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A16E43295F73B600583448 /* CategoryViewController.swift */; };
+		C5EBAFF12967F01B005302EB /* DetailedTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBAFF02967F01B005302EB /* DetailedTabsViewController.swift */; };
 		C5FABD3F294F5EFD0054B09E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FABD3E294F5EFD0054B09E /* AppDelegate.swift */; };
 		C5FABD41294F5EFD0054B09E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FABD40294F5EFD0054B09E /* SceneDelegate.swift */; };
-		C5FABD43294F5EFD0054B09E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FABD42294F5EFD0054B09E /* ViewController.swift */; };
-		C5FABD46294F5EFD0054B09E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FABD44294F5EFD0054B09E /* Main.storyboard */; };
+		C5FABD43294F5EFD0054B09E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FABD42294F5EFD0054B09E /* LoginViewController.swift */; };
 		C5FABD48294F5EFE0054B09E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5FABD47294F5EFE0054B09E /* Assets.xcassets */; };
 		C5FABD4B294F5EFE0054B09E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FABD49294F5EFE0054B09E /* LaunchScreen.storyboard */; };
+		C5FABD56294F65B20054B09E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C5FABD55294F65B20054B09E /* SnapKit */; };
+		C5FABD59294F66520054B09E /* UIColorHexSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C5FABD58294F66520054B09E /* UIColorHexSwift */; };
+		C5FABD5B294F67D60054B09E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FABD5A294F67D60054B09E /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C52BD0AC29671CCD00DB1490 /* FoodCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCard.swift; sourceTree = "<group>"; };
+		C52BD0AE29671D3E00DB1490 /* InfoTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTag.swift; sourceTree = "<group>"; };
+		C52BD0B029672BDB00DB1490 /* FoodDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailedViewController.swift; sourceTree = "<group>"; };
+		C52BD0B52967422300DB1490 /* HeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
+		C5336309296078B6001FBB41 /* FoodListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListTableViewController.swift; sourceTree = "<group>"; };
+		C5417B472952193C0008D0A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C5518BFE2968543B0064A951 /* TabHeadersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHeadersViewController.swift; sourceTree = "<group>"; };
+		C5518C00296867320064A951 /* WebContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentViewController.swift; sourceTree = "<group>"; };
+		C55F98AF2958E20A003F80F5 /* func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = func.swift; sourceTree = "<group>"; };
+		C57D66EF29614AFC00016040 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
+		C5A16E3D295F667F00583448 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		C5A16E3F295F681400583448 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
+		C5A16E41295F6FD800583448 /* WaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveViewController.swift; sourceTree = "<group>"; };
+		C5A16E43295F73B600583448 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		C5EBAFF02967F01B005302EB /* DetailedTabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedTabsViewController.swift; sourceTree = "<group>"; };
 		C5FABD3B294F5EFD0054B09E /* course-work.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "course-work.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FABD3E294F5EFD0054B09E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5FABD40294F5EFD0054B09E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C5FABD42294F5EFD0054B09E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C5FABD45294F5EFD0054B09E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5FABD42294F5EFD0054B09E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C5FABD47294F5EFE0054B09E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5FABD4A294F5EFE0054B09E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5FABD4C294F5EFE0054B09E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FABD5A294F67D60054B09E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +63,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5FABD59294F66520054B09E /* UIColorHexSwift in Frameworks */,
+				C5FABD56294F65B20054B09E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C52BD0B4296741DA00DB1490 /* food-detailed-screen */ = {
+			isa = PBXGroup;
+			children = (
+				C52BD0B52967422300DB1490 /* HeaderViewController.swift */,
+				C5EBAFF02967F01B005302EB /* DetailedTabsViewController.swift */,
+				C5518BFE2968543B0064A951 /* TabHeadersViewController.swift */,
+				C5518C00296867320064A951 /* WebContentViewController.swift */,
+			);
+			path = "food-detailed-screen";
+			sourceTree = "<group>";
+		};
+		C55F98AE2958E1E8003F80F5 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C55F98AF2958E20A003F80F5 /* func.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C57D66EE29614AC900016040 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				C57D66EF29614AFC00016040 /* Spacer.swift */,
+				C52BD0AC29671CCD00DB1490 /* FoodCard.swift */,
+				C52BD0AE29671D3E00DB1490 /* InfoTag.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		C5A16E3B295F655700583448 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				C52BD0B4296741DA00DB1490 /* food-detailed-screen */,
+				C57D66EE29614AC900016040 /* common */,
+				C5A16E3C295F664700583448 /* home-screen */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		C5A16E3C295F664700583448 /* home-screen */ = {
+			isa = PBXGroup;
+			children = (
+				C5A16E3D295F667F00583448 /* GreetingViewController.swift */,
+				C5A16E3F295F681400583448 /* BannerViewController.swift */,
+				C5A16E41295F6FD800583448 /* WaveViewController.swift */,
+				C5A16E43295F73B600583448 /* CategoryViewController.swift */,
+				C5336309296078B6001FBB41 /* FoodListTableViewController.swift */,
+			);
+			path = "home-screen";
+			sourceTree = "<group>";
+		};
 		C5FABD32294F5EFD0054B09E = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +141,27 @@
 		C5FABD3D294F5EFD0054B09E /* course-work */ = {
 			isa = PBXGroup;
 			children = (
+				C5A16E3B295F655700583448 /* components */,
+				C55F98AE2958E1E8003F80F5 /* utils */,
+				C5FABD52294F60BE0054B09E /* constants */,
 				C5FABD3E294F5EFD0054B09E /* AppDelegate.swift */,
 				C5FABD40294F5EFD0054B09E /* SceneDelegate.swift */,
-				C5FABD42294F5EFD0054B09E /* ViewController.swift */,
-				C5FABD44294F5EFD0054B09E /* Main.storyboard */,
+				C5FABD42294F5EFD0054B09E /* LoginViewController.swift */,
+				C5417B472952193C0008D0A5 /* HomeViewController.swift */,
+				C52BD0B029672BDB00DB1490 /* FoodDetailedViewController.swift */,
 				C5FABD47294F5EFE0054B09E /* Assets.xcassets */,
 				C5FABD49294F5EFE0054B09E /* LaunchScreen.storyboard */,
 				C5FABD4C294F5EFE0054B09E /* Info.plist */,
 			);
 			path = "course-work";
+			sourceTree = "<group>";
+		};
+		C5FABD52294F60BE0054B09E /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				C5FABD5A294F67D60054B09E /* Theme.swift */,
+			);
+			path = constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +180,10 @@
 			dependencies = (
 			);
 			name = "course-work";
+			packageProductDependencies = (
+				C5FABD55294F65B20054B09E /* SnapKit */,
+				C5FABD58294F66520054B09E /* UIColorHexSwift */,
+			);
 			productName = "course-work";
 			productReference = C5FABD3B294F5EFD0054B09E /* course-work.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +212,10 @@
 				Base,
 			);
 			mainGroup = C5FABD32294F5EFD0054B09E;
+			packageReferences = (
+				C5FABD54294F65B20054B09E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C5FABD57294F66520054B09E /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */,
+			);
 			productRefGroup = C5FABD3C294F5EFD0054B09E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +232,6 @@
 			files = (
 				C5FABD4B294F5EFE0054B09E /* LaunchScreen.storyboard in Resources */,
 				C5FABD48294F5EFE0054B09E /* Assets.xcassets in Resources */,
-				C5FABD46294F5EFD0054B09E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +242,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5FABD43294F5EFD0054B09E /* ViewController.swift in Sources */,
+				C52BD0AD29671CCD00DB1490 /* FoodCard.swift in Sources */,
+				C5A16E44295F73B600583448 /* CategoryViewController.swift in Sources */,
+				C57D66F029614AFC00016040 /* Spacer.swift in Sources */,
+				C5417B482952193C0008D0A5 /* HomeViewController.swift in Sources */,
+				C5518C01296867320064A951 /* WebContentViewController.swift in Sources */,
+				C5FABD43294F5EFD0054B09E /* LoginViewController.swift in Sources */,
+				C5518BFF2968543B0064A951 /* TabHeadersViewController.swift in Sources */,
+				C5EBAFF12967F01B005302EB /* DetailedTabsViewController.swift in Sources */,
+				C5A16E40295F681400583448 /* BannerViewController.swift in Sources */,
+				C5FABD5B294F67D60054B09E /* Theme.swift in Sources */,
 				C5FABD3F294F5EFD0054B09E /* AppDelegate.swift in Sources */,
+				C5A16E42295F6FD800583448 /* WaveViewController.swift in Sources */,
+				C5A16E3E295F667F00583448 /* GreetingViewController.swift in Sources */,
+				C52BD0AF29671D3E00DB1490 /* InfoTag.swift in Sources */,
 				C5FABD41294F5EFD0054B09E /* SceneDelegate.swift in Sources */,
+				C55F98B02958E20A003F80F5 /* func.swift in Sources */,
+				C52BD0B62967422300DB1490 /* HeaderViewController.swift in Sources */,
+				C533630A296078B6001FBB41 /* FoodListTableViewController.swift in Sources */,
+				C52BD0B129672BDB00DB1490 /* FoodDetailedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C5FABD44294F5EFD0054B09E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C5FABD45294F5EFD0054B09E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C5FABD49294F5EFE0054B09E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +403,6 @@
 				INFOPLIST_FILE = "course-work/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +429,6 @@
 				INFOPLIST_FILE = "course-work/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +466,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C5FABD54294F65B20054B09E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C5FABD57294F66520054B09E /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yeahdongcn/UIColor-Hex-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C5FABD55294F65B20054B09E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5FABD54294F65B20054B09E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C5FABD58294F66520054B09E /* UIColorHexSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5FABD57294F66520054B09E /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */;
+			productName = UIColorHexSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C5FABD33294F5EFD0054B09E /* Project object */;
 }
