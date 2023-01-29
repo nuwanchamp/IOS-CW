@@ -1,9 +1,4 @@
-//
-//  WaveViewController.swift
-//  course-work
-//
-//  Created by user229897 on 12/30/22.
-//
+
 
 import UIKit
 
@@ -16,13 +11,14 @@ class WaveViewController: UIViewController {
         let imageView1 = UIImageView(frame: CGRect(x: 0, y: 0, width:900, height: 100))
         imageView1.image = UIImage(named: "animationImg")
         imageView1.clipsToBounds = true
-        view.addSubview(imageView1)
         
         let imageView2 = UIImageView(frame: CGRect(x: 0, y: 0, width:900, height: 100))
         imageView2.image = UIImage(named: "animationImg2")
         imageView2.clipsToBounds = true
-        view.addSubview(imageView2)
         
+        
+        view.addSubview(imageView1)
+        view.addSubview(imageView2)
         view.bringSubviewToFront(imageView1)
         
         

@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "78424be314842833c04bc3bef5b72e85fff99204",
+        "version" : "5.6.4"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "57fea0db138b8ce8a3bb3b6708edfa1b634af8e4"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "f222cbdf325885926566172f6f5f06af95473158",
+        "version" : "5.6.0"
+      }
+    },
+    {
+      "identity" : "uicolor-hex-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yeahdongcn/UIColor-Hex-Swift",
+      "state" : {
+        "revision" : "f37f97bc1a5b545b39ab5330e133e56fa4f38cff",
+        "version" : "5.1.9"
+      }
+    }
+  ],
+  "version" : 2
+}

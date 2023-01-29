@@ -15,13 +15,23 @@
 		C5417B482952193C0008D0A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5417B472952193C0008D0A5 /* HomeViewController.swift */; };
 		C5518BFF2968543B0064A951 /* TabHeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5518BFE2968543B0064A951 /* TabHeadersViewController.swift */; };
 		C5518C01296867320064A951 /* WebContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5518C00296867320064A951 /* WebContentViewController.swift */; };
+		C559947C296DAA7200AD2912 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C559947B296DAA7200AD2912 /* LoginViewModel.swift */; };
 		C55F98B02958E20A003F80F5 /* func.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F98AF2958E20A003F80F5 /* func.swift */; };
 		C57D66F029614AFC00016040 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57D66EF29614AFC00016040 /* Spacer.swift */; };
+		C5833BA8296B17910064F60D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5833BA7296B17910064F60D /* RegisterViewController.swift */; };
+		C5833BAA296B1E9A0064F60D /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5833BA9296B1E9A0064F60D /* BookmarkViewController.swift */; };
+		C583DA7429869BD1004BBEBA /* Configure_RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C583DA7329869BD1004BBEBA /* Configure_RegisterViewController.swift */; };
+		C583DA7629869EF5004BBEBA /* Constraints_RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C583DA7529869EF5004BBEBA /* Constraints_RegisterViewController.swift */; };
 		C5A16E3E295F667F00583448 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A16E3D295F667F00583448 /* GreetingViewController.swift */; };
 		C5A16E40295F681400583448 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A16E3F295F681400583448 /* BannerViewController.swift */; };
 		C5A16E42295F6FD800583448 /* WaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A16E41295F6FD800583448 /* WaveViewController.swift */; };
 		C5A16E44295F73B600583448 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A16E43295F73B600583448 /* CategoryViewController.swift */; };
+		C5B1DBFA2982E20100F69E40 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B1DBF92982E20100F69E40 /* HomeViewModel.swift */; };
+		C5D57C5429854B4400DD3728 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C5D57C5329854B4400DD3728 /* Kingfisher */; };
 		C5EBAFF12967F01B005302EB /* DetailedTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBAFF02967F01B005302EB /* DetailedTabsViewController.swift */; };
+		C5F3E1F629724C2200E48B5A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C5F3E1F529724C2200E48B5A /* Alamofire */; };
+		C5F7F6A62985A0FD00CB3ECF /* Configure_LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7F6A52985A0FD00CB3ECF /* Configure_LoginViewController.swift */; };
+		C5F7F6A82985A18100CB3ECF /* Constraints_LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7F6A72985A18100CB3ECF /* Constraints_LoginViewController.swift */; };
 		C5FABD3F294F5EFD0054B09E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FABD3E294F5EFD0054B09E /* AppDelegate.swift */; };
 		C5FABD41294F5EFD0054B09E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FABD40294F5EFD0054B09E /* SceneDelegate.swift */; };
 		C5FABD43294F5EFD0054B09E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FABD42294F5EFD0054B09E /* LoginViewController.swift */; };
@@ -41,13 +51,21 @@
 		C5417B472952193C0008D0A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C5518BFE2968543B0064A951 /* TabHeadersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHeadersViewController.swift; sourceTree = "<group>"; };
 		C5518C00296867320064A951 /* WebContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentViewController.swift; sourceTree = "<group>"; };
+		C559947B296DAA7200AD2912 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C55F98AF2958E20A003F80F5 /* func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = func.swift; sourceTree = "<group>"; };
 		C57D66EF29614AFC00016040 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
+		C5833BA7296B17910064F60D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C5833BA9296B1E9A0064F60D /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		C583DA7329869BD1004BBEBA /* Configure_RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configure_RegisterViewController.swift; sourceTree = "<group>"; };
+		C583DA7529869EF5004BBEBA /* Constraints_RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints_RegisterViewController.swift; sourceTree = "<group>"; };
 		C5A16E3D295F667F00583448 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		C5A16E3F295F681400583448 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		C5A16E41295F6FD800583448 /* WaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveViewController.swift; sourceTree = "<group>"; };
 		C5A16E43295F73B600583448 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		C5B1DBF92982E20100F69E40 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C5EBAFF02967F01B005302EB /* DetailedTabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedTabsViewController.swift; sourceTree = "<group>"; };
+		C5F7F6A52985A0FD00CB3ECF /* Configure_LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configure_LoginViewController.swift; sourceTree = "<group>"; };
+		C5F7F6A72985A18100CB3ECF /* Constraints_LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints_LoginViewController.swift; sourceTree = "<group>"; };
 		C5FABD3B294F5EFD0054B09E /* course-work.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "course-work.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FABD3E294F5EFD0054B09E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5FABD40294F5EFD0054B09E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5D57C5429854B4400DD3728 /* Kingfisher in Frameworks */,
+				C5F3E1F629724C2200E48B5A /* Alamofire in Frameworks */,
 				C5FABD59294F66520054B09E /* UIColorHexSwift in Frameworks */,
 				C5FABD56294F65B20054B09E /* SnapKit in Frameworks */,
 			);
@@ -80,6 +100,15 @@
 				C5518C00296867320064A951 /* WebContentViewController.swift */,
 			);
 			path = "food-detailed-screen";
+			sourceTree = "<group>";
+		};
+		C559947A296DAA5400AD2912 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				C559947B296DAA7200AD2912 /* LoginViewModel.swift */,
+				C5B1DBF92982E20100F69E40 /* HomeViewModel.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		C55F98AE2958E1E8003F80F5 /* utils */ = {
@@ -100,6 +129,16 @@
 			path = common;
 			sourceTree = "<group>";
 		};
+		C583DA772986A80E004BBEBA /* register-screen */ = {
+			isa = PBXGroup;
+			children = (
+				C5833BA7296B17910064F60D /* RegisterViewController.swift */,
+				C583DA7329869BD1004BBEBA /* Configure_RegisterViewController.swift */,
+				C583DA7529869EF5004BBEBA /* Constraints_RegisterViewController.swift */,
+			);
+			path = "register-screen";
+			sourceTree = "<group>";
+		};
 		C5A16E3B295F655700583448 /* components */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,13 +152,43 @@
 		C5A16E3C295F664700583448 /* home-screen */ = {
 			isa = PBXGroup;
 			children = (
-				C5A16E3D295F667F00583448 /* GreetingViewController.swift */,
-				C5A16E3F295F681400583448 /* BannerViewController.swift */,
-				C5A16E41295F6FD800583448 /* WaveViewController.swift */,
-				C5A16E43295F73B600583448 /* CategoryViewController.swift */,
-				C5336309296078B6001FBB41 /* FoodListTableViewController.swift */,
+				C5F7F6A22985A05100CB3ECF /* sections */,
 			);
 			path = "home-screen";
+			sourceTree = "<group>";
+		};
+		C5F7F6A22985A05100CB3ECF /* sections */ = {
+			isa = PBXGroup;
+			children = (
+				C5336309296078B6001FBB41 /* FoodListTableViewController.swift */,
+				C5A16E43295F73B600583448 /* CategoryViewController.swift */,
+				C5A16E41295F6FD800583448 /* WaveViewController.swift */,
+				C5A16E3F295F681400583448 /* BannerViewController.swift */,
+				C5A16E3D295F667F00583448 /* GreetingViewController.swift */,
+			);
+			path = sections;
+			sourceTree = "<group>";
+		};
+		C5F7F6A92985B34400CB3ECF /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				C5417B472952193C0008D0A5 /* HomeViewController.swift */,
+				C5833BA9296B1E9A0064F60D /* BookmarkViewController.swift */,
+				C52BD0B029672BDB00DB1490 /* FoodDetailedViewController.swift */,
+				C583DA772986A80E004BBEBA /* register-screen */,
+				C5F7F6AA2985B35900CB3ECF /* login-screen */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		C5F7F6AA2985B35900CB3ECF /* login-screen */ = {
+			isa = PBXGroup;
+			children = (
+				C5F7F6A72985A18100CB3ECF /* Constraints_LoginViewController.swift */,
+				C5F7F6A52985A0FD00CB3ECF /* Configure_LoginViewController.swift */,
+				C5FABD42294F5EFD0054B09E /* LoginViewController.swift */,
+			);
+			path = "login-screen";
 			sourceTree = "<group>";
 		};
 		C5FABD32294F5EFD0054B09E = {
@@ -141,16 +210,15 @@
 		C5FABD3D294F5EFD0054B09E /* course-work */ = {
 			isa = PBXGroup;
 			children = (
+				C5F7F6A92985B34400CB3ECF /* screens */,
+				C559947A296DAA5400AD2912 /* models */,
 				C5A16E3B295F655700583448 /* components */,
 				C55F98AE2958E1E8003F80F5 /* utils */,
 				C5FABD52294F60BE0054B09E /* constants */,
 				C5FABD3E294F5EFD0054B09E /* AppDelegate.swift */,
 				C5FABD40294F5EFD0054B09E /* SceneDelegate.swift */,
-				C5FABD42294F5EFD0054B09E /* LoginViewController.swift */,
-				C5417B472952193C0008D0A5 /* HomeViewController.swift */,
-				C52BD0B029672BDB00DB1490 /* FoodDetailedViewController.swift */,
-				C5FABD47294F5EFE0054B09E /* Assets.xcassets */,
 				C5FABD49294F5EFE0054B09E /* LaunchScreen.storyboard */,
+				C5FABD47294F5EFE0054B09E /* Assets.xcassets */,
 				C5FABD4C294F5EFE0054B09E /* Info.plist */,
 			);
 			path = "course-work";
@@ -183,6 +251,8 @@
 			packageProductDependencies = (
 				C5FABD55294F65B20054B09E /* SnapKit */,
 				C5FABD58294F66520054B09E /* UIColorHexSwift */,
+				C5F3E1F529724C2200E48B5A /* Alamofire */,
+				C5D57C5329854B4400DD3728 /* Kingfisher */,
 			);
 			productName = "course-work";
 			productReference = C5FABD3B294F5EFD0054B09E /* course-work.app */;
@@ -215,6 +285,8 @@
 			packageReferences = (
 				C5FABD54294F65B20054B09E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				C5FABD57294F66520054B09E /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */,
+				C5F3E1F429724C2200E48B5A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C5D57C5229854B4400DD3728 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = C5FABD3C294F5EFD0054B09E /* Products */;
 			projectDirPath = "";
@@ -242,25 +314,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C583DA7429869BD1004BBEBA /* Configure_RegisterViewController.swift in Sources */,
 				C52BD0AD29671CCD00DB1490 /* FoodCard.swift in Sources */,
 				C5A16E44295F73B600583448 /* CategoryViewController.swift in Sources */,
+				C559947C296DAA7200AD2912 /* LoginViewModel.swift in Sources */,
 				C57D66F029614AFC00016040 /* Spacer.swift in Sources */,
 				C5417B482952193C0008D0A5 /* HomeViewController.swift in Sources */,
+				C5B1DBFA2982E20100F69E40 /* HomeViewModel.swift in Sources */,
 				C5518C01296867320064A951 /* WebContentViewController.swift in Sources */,
 				C5FABD43294F5EFD0054B09E /* LoginViewController.swift in Sources */,
 				C5518BFF2968543B0064A951 /* TabHeadersViewController.swift in Sources */,
 				C5EBAFF12967F01B005302EB /* DetailedTabsViewController.swift in Sources */,
 				C5A16E40295F681400583448 /* BannerViewController.swift in Sources */,
 				C5FABD5B294F67D60054B09E /* Theme.swift in Sources */,
+				C5833BAA296B1E9A0064F60D /* BookmarkViewController.swift in Sources */,
 				C5FABD3F294F5EFD0054B09E /* AppDelegate.swift in Sources */,
+				C5833BA8296B17910064F60D /* RegisterViewController.swift in Sources */,
+				C5F7F6A82985A18100CB3ECF /* Constraints_LoginViewController.swift in Sources */,
 				C5A16E42295F6FD800583448 /* WaveViewController.swift in Sources */,
 				C5A16E3E295F667F00583448 /* GreetingViewController.swift in Sources */,
+				C583DA7629869EF5004BBEBA /* Constraints_RegisterViewController.swift in Sources */,
 				C52BD0AF29671D3E00DB1490 /* InfoTag.swift in Sources */,
 				C5FABD41294F5EFD0054B09E /* SceneDelegate.swift in Sources */,
 				C55F98B02958E20A003F80F5 /* func.swift in Sources */,
 				C52BD0B62967422300DB1490 /* HeaderViewController.swift in Sources */,
 				C533630A296078B6001FBB41 /* FoodListTableViewController.swift in Sources */,
 				C52BD0B129672BDB00DB1490 /* FoodDetailedViewController.swift in Sources */,
+				C5F7F6A62985A0FD00CB3ECF /* Configure_LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +548,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C5D57C5229854B4400DD3728 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		C5F3E1F429724C2200E48B5A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		C5FABD54294F65B20054B09E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -487,6 +583,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C5D57C5329854B4400DD3728 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5D57C5229854B4400DD3728 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		C5F3E1F529724C2200E48B5A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5F3E1F429724C2200E48B5A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		C5FABD55294F65B20054B09E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C5FABD54294F65B20054B09E /* XCRemoteSwiftPackageReference "SnapKit" */;

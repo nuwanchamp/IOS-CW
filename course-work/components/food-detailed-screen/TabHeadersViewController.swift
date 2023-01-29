@@ -8,6 +8,7 @@ protocol TabHeaderDelegate:AnyObject{
 class TabHeadersViewController: UIViewController {
     
     weak var delegate:TabHeaderDelegate?
+    var  currentTab:Int = 0;
     let tabs:[String] = ["Description", "Instructions", "Nutritions"]
     let tabList:UICollectionView = {
        
@@ -50,7 +51,7 @@ extension TabHeadersViewController:UICollectionViewDataSource,UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:TabHeader = collectionView.dequeueReusableCell(withReuseIdentifier: "tag", for: indexPath) as! TabHeader
         cell.categoryName.text = tabs[indexPath.row]
-        if(indexPath.row == 0){
+        if(indexPath.row == self.currentTab){
             cell.wrapper.backgroundColor = kPrimaryColor
         }
         
@@ -60,6 +61,8 @@ extension TabHeadersViewController:UICollectionViewDataSource,UICollectionViewDe
         return CGSize(width: 120, height: 50)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.currentTab = indexPath.row
+        tabList.reloadData()
         self.delegate?.DidTabChanged(indexPath: indexPath)
     }
     
