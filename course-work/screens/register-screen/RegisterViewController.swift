@@ -86,9 +86,19 @@ class RegisterViewController: UIViewController {
     }
    
     @objc func register(){
-        print("working")
-        viewModel.register()
-        self.navigationController?.setViewControllers([LoginViewController()], animated: true)
+        
+        viewModel.signUp{
+            (resp) in
+            if(resp){
+                 self.navigationController?.setViewControllers([LoginViewController()], animated: true)
+            }else{
+                var alert = createAlert(title: "Error", message: "Invalid user details") { UIAlertAction in
+                    // Do nothing
+                }
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+       
     }
     
     @objc func emailFieldChange(_ emailfield:UITextField){

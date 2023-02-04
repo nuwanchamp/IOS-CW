@@ -77,10 +77,11 @@ struct CuisineAPIResponse: Codable{
 // MARK: - Datum
 struct Recipe: Codable {
     let id: Int
-    let name, shortDescription, description, nutrition: String
+    let name, shortDescription, description: String
     let ingredients, cuisineID: String
-    let createdAt, updatedAt: AtedAt
+    let createdAt, updatedAt: String
     let time, calories: Int
+    let nutrition: Nutrition
     let image: String
     let instructions: String
 
@@ -93,6 +94,10 @@ struct Recipe: Codable {
         case updatedAt = "updated_at"
         case time, calories, image, instructions
     }
+}
+struct Nutrition: Codable{
+    let energy: Int
+    let  protein, fat, sugars: Double
 }
 
 enum AtedAt: String, Codable {

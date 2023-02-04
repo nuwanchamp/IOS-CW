@@ -53,13 +53,17 @@ extension LoginViewController{
             emailField.translatesAutoresizingMaskIntoConstraints = false
             emailField.backgroundColor = kCardColor
             emailField.layer.cornerRadius = 25
-           
+            emailField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height:emailField.frame.height))
+            emailField.leftViewMode = .always
+            emailField.textColor = .white
        
             passwordField.translatesAutoresizingMaskIntoConstraints = false
             passwordField.backgroundColor = kCardColor
             passwordField.layer.cornerRadius = 25
             passwordField.isSecureTextEntry = true
-        
+            passwordField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height:passwordField.frame.height))
+            passwordField.leftViewMode = .always
+            passwordField.textColor = .white
         
             remeberMeLabel.translatesAutoresizingMaskIntoConstraints = false
             remeberMeLabel.font = .systemFont(ofSize: 14,weight: .semibold)

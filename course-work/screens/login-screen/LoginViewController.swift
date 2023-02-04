@@ -75,9 +75,17 @@ class LoginViewController: UIViewController {
     }
     
     @objc func signIn(){
-        print("working")
-        viewModel.login()
-        self.navigationController?.setViewControllers([HomeViewController()], animated: true)
+        viewModel.signIn { resp in
+            if(resp){
+                 self.navigationController?.setViewControllers([HomeViewController()], animated: true)
+            }else{
+                var alert = createAlert(title: "Error", message: "Invalid user details") { UIAlertAction in
+                    // Do nothing
+                }
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+       
     }
     
     @objc func signUp(){

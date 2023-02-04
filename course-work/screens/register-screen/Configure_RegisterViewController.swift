@@ -6,15 +6,24 @@ extension RegisterViewController{
         emailField.translatesAutoresizingMaskIntoConstraints = false
         emailField.backgroundColor = kCardColor
         emailField.layer.cornerRadius = 25
+        emailField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height:passwordField.frame.height))
+        emailField.leftViewMode = .always
+        emailField.textColor = .white
         
         nameField.translatesAutoresizingMaskIntoConstraints = false
         nameField.backgroundColor = kCardColor
         nameField.layer.cornerRadius = 25
+        nameField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height:passwordField.frame.height))
+        nameField.leftViewMode = .always
+        nameField.textColor = .white
         
         passwordField.translatesAutoresizingMaskIntoConstraints = false
         passwordField.backgroundColor = kCardColor
         passwordField.layer.cornerRadius = 25
         passwordField.isSecureTextEntry = true
+        passwordField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height:passwordField.frame.height))
+        passwordField.leftViewMode = .always
+        passwordField.textColor = .white
         
         registerBtn.setTitle("Sign Up".uppercased(), for: .normal)
         registerBtn.titleColor(for: .normal)

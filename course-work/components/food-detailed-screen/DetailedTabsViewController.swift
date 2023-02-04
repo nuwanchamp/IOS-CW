@@ -1,5 +1,7 @@
 
 import UIKit
+import Charts
+import SnapKit
 
 class DetailedTabsViewController: UIPageViewController {
     
@@ -69,6 +71,16 @@ class InstructionsSubviewController:UIViewController{
 
 class NutritionsSubviewController:UIViewController{
     let nutritions:UITextView = UITextView()
+    var nutritionSet:Nutrition?
+    let pieChartView:PieChartView = {
+        let pChart = PieChartView()
+        pChart.translatesAutoresizingMaskIntoConstraints = false;
+        
+        let attributedString = NSAttributedString(string: "Nutrition Per 100g", attributes: [.font: UIFont.boldSystemFont(ofSize: 18), .foregroundColor: UIColor.white])
+        
+        pChart.centerAttributedText = attributedString
+        return pChart
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         nutritions.textColor = kFontColorHeading
@@ -80,12 +92,37 @@ class NutritionsSubviewController:UIViewController{
         nutritions.textContainer.lineFragmentPadding = 0
         nutritions.font = .systemFont(ofSize: 14)
         
-        view.addSubview(nutritions)
-        nutritions.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(20)
-            make.left.equalToSuperview().offset(20)
-            make.right.equalToSuperview().offset(-20)
+        let dataEntries = [
+           // PieChartDataEntry(value: Double(self.nutritionSet!.energy), label: "Enegry"),
+            PieChartDataEntry(value: self.nutritionSet!.fat, label: "Fat"),
+            PieChartDataEntry(value: self.nutritionSet!.protein, label: "Protein"),
+            PieChartDataEntry(value: self.nutritionSet!.sugars, label: "Sugars")
+        ]
+                
+        let chartDataSet = PieChartDataSet(entries: dataEntries, label: "Nutritions per 100g")
+                
+        let chartData = PieChartData(dataSet: chartDataSet)
+                
+                // Customize chart appearance
+                
+        chartDataSet.colors = [UIColor.red, UIColor.green, UIColor.blue]
+                
+        pieChartView.holeColor = kBackgroundColor2
+                
+        pieChartView.legend.enabled = false
+                
+        pieChartView.rotationEnabled = true
+                
+        pieChartView.data = chartData
+        
+        view.addSubview(pieChartView)
+        pieChartView.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalToSuperview()
         }
+       
        
     }
         

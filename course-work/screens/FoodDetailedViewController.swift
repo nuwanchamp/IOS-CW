@@ -69,7 +69,9 @@ extension FoodDetailedViewController{
         self.tabs.descriptionPage.desc.text = self.recipe.description
         print(self.recipe.instructions)
         self.tabs.instructionPage.instructs.text = self.recipe.instructions
-        self.tabs.nutritionsPage.nutritions.text = self.recipe.nutrition
+       
+        
+        self.tabs.nutritionsPage.nutritionSet = self.recipe.nutrition
         
     }
 }

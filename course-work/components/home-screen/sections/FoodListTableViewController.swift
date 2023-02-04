@@ -6,13 +6,18 @@ import Combine
 
 protocol FoodListTableViewDelegate:AnyObject{
     func didSelectFoodAt(indexPath:IndexPath, recipe:Recipe)
+    func didRemoveBookmarkAt()
 }
 
 class FoodListTableViewController: UIViewController {
     
+    
     weak var delegate: FoodListTableViewDelegate?
     var navC:UINavigationController?
-    var listOfRecipes:[Recipe] = [Recipe]()
+    @Published var listOfRecipes:[Recipe] = [Recipe]()
+    @Published var isLoading = true
+    var markedRecipes:[Int] = [Int]() // recipe Id List
+    private var subscriptions = Set<AnyCancellable>()
     
     let foodList:UITableView = UITableView()
     
@@ -23,7 +28,16 @@ class FoodListTableViewController: UIViewController {
         configure()
         // Set Constratints to the components
         setConstraints()
-
+        $listOfRecipes
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] _ in
+                self?.foodList.reloadData()
+            }
+            .store(in: &subscriptions)
+        $listOfRecipes.map { _ in
+            false
+        }.assign(to: \.isLoading, on: self)
+            .store(in: &subscriptions)
     }
     
     
@@ -31,19 +45,41 @@ class FoodListTableViewController: UIViewController {
 }
 
 
-extension FoodListTableViewController:UITableViewDelegate, UITableViewDataSource{
+extension FoodListTableViewController:UITableViewDelegate, UITableViewDataSource, FoodCardDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listOfRecipes.count
+        print(listOfRecipes.count)
+        
+        return isLoading ? 5 : listOfRecipes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print(listOfRecipes.count)
         let cell:FoodListItem = tableView.dequeueReusableCell(withIdentifier: "FoodCard", for: indexPath) as! FoodListItem
+        
+        if(isLoading){
+            
+            return cell
+        }
         cell.card.nav = self.navC
         cell.card.foodName.text = listOfRecipes[indexPath.row].name
         cell.card.foodDescription.text = listOfRecipes[indexPath.row].description
         cell.card.calInfo.text.text = "\(listOfRecipes[indexPath.row].calories) cal"
         cell.card.timeInfo.text.text = "\(listOfRecipes[indexPath.row].time) Mins"
         cell.card.foodImage.kf.setImage(with: URL(string:listOfRecipes[indexPath.row].image))
+        cell.card.recipeId = listOfRecipes[indexPath.row].id
+        cell.card.delegate = self
+        if(SessionManager.shared.bookmarks.filter({ bookmark in
+            bookmark.recipe.id == listOfRecipes[indexPath.row].id
+        }).count > 0 ){
+            cell.card.bookmaMakrBtn.isHidden = true
+            cell.card.removeBookMarkBtn.isHidden = false
+            
+        }else{
+            cell.card.bookmaMakrBtn.isHidden = false
+            cell.card.removeBookMarkBtn.isHidden = true
+        }
+        
+        
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -52,6 +88,20 @@ extension FoodListTableViewController:UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.delegate?.didSelectFoodAt(indexPath: indexPath, recipe: listOfRecipes[indexPath.row])
     }
+    func didRemoveBookamrk() {
+        self.foodList.reloadData()
+        self.delegate?.didRemoveBookmarkAt()
+    }
+    func beforeAddBookmark() {
+       // var alert = createAlert(title: "Error", message: "Bookmark already exists") { action in
+            // No Action
+       // }
+      //  self.present(alert, animated: true)
+    }
+    func afterAddBookmark() {
+        self.foodList.reloadData()
+    }
+    
 }
 
 extension FoodListTableViewController{

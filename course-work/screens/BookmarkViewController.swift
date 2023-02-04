@@ -1,12 +1,16 @@
 
 import UIKit
 import SnapKit
+import Combine
 
 class BookmarkViewController: UIViewController {
 
     let greetinSegment = GreetingViewController()
     let categorySegment = CategoryViewController()
     let foodListSegment =  FoodListTableViewController()
+    let bookmarkModel = BookmarkViewModel()
+    var bookmarksRef:[Recipe] = [Recipe]()
+    private var subscriptions = Set<AnyCancellable>()
     
     let column:UIStackView = {
         let vStack = UIStackView()
@@ -58,16 +62,46 @@ class BookmarkViewController: UIViewController {
             make.bottom.equalToSuperview()
         }
         foodListSegment.delegate = self
+        categorySegment.delegate = self
+        
+
+        SessionManager.shared.$bookmarks
+            .map{
+            bookmarks in
+            bookmarks.map { bookmark in
+                bookmark.recipe
+            }
+        }
+        .receive(on: DispatchQueue.main)
+        .assign(to:\.foodListSegment.listOfRecipes, on: self)
+        .store(in: &subscriptions)
+      
+       
     }
     
+    func filterRecipeByCuisineId(id: Int)->[Recipe]{
+        return bookmarksRef.filter { recipe in
+            Int(recipe.cuisineID) == id
+        }
+    }
 
 }
 
-extension BookmarkViewController:FoodListTableViewDelegate{
+extension BookmarkViewController:FoodListTableViewDelegate, CategoryTabDelegate{
+    func didRemoveBookmarkAt() {
+        self.foodListSegment.foodList.reloadData()
+    }
+    
     func didSelectFoodAt(indexPath: IndexPath, recipe: Recipe) {
         self.navigationController?.pushViewController(FoodDetailedViewController(recipe:recipe), animated: true)
     }
-    
+    func categoryChanged(id: Int) {
+        let filteredRecipeList = filterRecipeByCuisineId(id: id)
+        print(filteredRecipeList)
+        self.foodListSegment.listOfRecipes = filteredRecipeList
+        self.foodListSegment.foodList.reloadData()
+    }
+        
     
 }
 

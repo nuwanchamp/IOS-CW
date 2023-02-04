@@ -1,9 +1,4 @@
-//
-//  HomeViewController.swift
-//  course-work
-//
-//  Created by user229897 on 12/20/22.
-//
+
 
 import UIKit
 import SnapKit
@@ -19,6 +14,7 @@ class HomeViewController: UIViewController {
     let categorySegment = CategoryViewController()
     
     var homeModel = HomeViewModel()
+    var bookmarkModel = BookmarkViewModel()
     var subscriptions:[AnyCancellable] = [AnyCancellable]()
     var foodListSegment:FoodListTableViewController = FoodListTableViewController()
     var recipeRef:[Recipe] = [Recipe]()
@@ -49,6 +45,7 @@ class HomeViewController: UIViewController {
             make.right.equalToSuperview()
             make.height.equalTo(170)
         }
+        greetinSegment.navC = self.navigationController
       
         // ===============================================
         //   Banner Segment
@@ -96,6 +93,8 @@ class HomeViewController: UIViewController {
         foodListSegment.navC = self.navigationController
         
         loadData()
+        SessionManager.shared.loadData()
+        
     }
     
     func loadData(){
@@ -111,7 +110,24 @@ class HomeViewController: UIViewController {
                     
                 }
             }.store(in: &subscriptions)
-    }
+        bookmarkModel.$bookmarkList
+            .receive(on: DispatchQueue.main)
+            .compactMap({ preMarks in
+                return preMarks.map { $0.recipe }
+                
+            })
+            .sink { bookmarks in
+                                
+                DispatchQueue.main.async {
+                    self.foodListSegment.listOfRecipes = bookmarks
+                    self.foodListSegment.markedRecipes = bookmarks.map({ recipe in
+                        return recipe.id
+                    })
+                    
+                    self.foodListSegment.foodList.reloadData()
+                    
+                }
+            }.store(in: &subscriptions)    }
     func filterRecipeByCuisineId(id: Int)->[Recipe]{
         return recipeRef.filter { recipe in
             Int(recipe.cuisineID) == id
@@ -121,6 +137,12 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController:FoodListTableViewDelegate,CategoryTabDelegate{
+    func didRemoveBookmarkAt() {
+        print("done")
+        self.foodListSegment.foodList.reloadData()
+    }
+    
+    
     func categoryChanged(id: Int) {
         let filteredRecipeList = filterRecipeByCuisineId(id: id)
         self.foodListSegment.listOfRecipes = filteredRecipeList

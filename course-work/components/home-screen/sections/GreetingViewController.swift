@@ -10,6 +10,7 @@ class GreetingViewController: UIViewController {
     let greeting:UILabel = UILabel()
     let dP:UIImageView = UIImageView()
     let dpFrame:UIView =  UIView()
+    var navC:UINavigationController?
     
     
     
@@ -32,10 +33,22 @@ extension GreetingViewController:UIContextMenuInteractionDelegate{
     
     func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
         let bookmark = UIAction(title: "Bookmarks", image: UIImage(systemName: "bookmark.square")) { action in
-                    // perform bookmark action
+            if(UserDefaults.standard.bool(forKey: "isLoggedIn")){
+                self.navC?.pushViewController(BookmarkViewController(), animated: true)
+            }else{
+                let alertController = createAlert(title: "Error", message: "You need to Login first") { action in
+                    self.navC?.pushViewController(LoginViewController(), animated: true)
                 }
-                let logout = UIAction(title: "Logout", image: UIImage(systemName: "arrow.uturn.backward.square")) { action in
+                self.present(alertController, animated: true, completion: nil)
+                
+            }
+               
+        }
+        let logout = UIAction(title: UserDefaults.standard.bool(forKey: "isLoggedIn") ? "Logout" : "Login", image: UIImage(systemName: "arrow.uturn.backward.square")) { action in
                     UserDefaults.standard.set(false, forKey: "isLoggedIn")
+                    print(UserDefaults.standard.bool(forKey: "isLoggedIn"))
+                    self.navC?.pushViewController(
+                        LoginViewController(), animated: true)
                 }
         
         return UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { suggestedActions in

@@ -13,10 +13,12 @@
 		C52BD0B62967422300DB1490 /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52BD0B52967422300DB1490 /* HeaderViewController.swift */; };
 		C533630A296078B6001FBB41 /* FoodListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5336309296078B6001FBB41 /* FoodListTableViewController.swift */; };
 		C5417B482952193C0008D0A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5417B472952193C0008D0A5 /* HomeViewController.swift */; };
+		C549E06F298AACE60033906D /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549E06E298AACE60033906D /* SessionManager.swift */; };
 		C5518BFF2968543B0064A951 /* TabHeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5518BFE2968543B0064A951 /* TabHeadersViewController.swift */; };
 		C5518C01296867320064A951 /* WebContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5518C00296867320064A951 /* WebContentViewController.swift */; };
 		C559947C296DAA7200AD2912 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C559947B296DAA7200AD2912 /* LoginViewModel.swift */; };
 		C55F98B02958E20A003F80F5 /* func.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F98AF2958E20A003F80F5 /* func.swift */; };
+		C56EB66229880A6600206366 /* BookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56EB66129880A6600206366 /* BookmarkViewModel.swift */; };
 		C57D66F029614AFC00016040 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57D66EF29614AFC00016040 /* Spacer.swift */; };
 		C5833BA8296B17910064F60D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5833BA7296B17910064F60D /* RegisterViewController.swift */; };
 		C5833BAA296B1E9A0064F60D /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5833BA9296B1E9A0064F60D /* BookmarkViewController.swift */; };
@@ -28,6 +30,7 @@
 		C5A16E44295F73B600583448 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A16E43295F73B600583448 /* CategoryViewController.swift */; };
 		C5B1DBFA2982E20100F69E40 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B1DBF92982E20100F69E40 /* HomeViewModel.swift */; };
 		C5D57C5429854B4400DD3728 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C5D57C5329854B4400DD3728 /* Kingfisher */; };
+		C5E7380F298DA6660057C289 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = C5E7380E298DA6660057C289 /* RiveRuntime */; };
 		C5EBAFF12967F01B005302EB /* DetailedTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBAFF02967F01B005302EB /* DetailedTabsViewController.swift */; };
 		C5F3E1F629724C2200E48B5A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C5F3E1F529724C2200E48B5A /* Alamofire */; };
 		C5F7F6A62985A0FD00CB3ECF /* Configure_LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7F6A52985A0FD00CB3ECF /* Configure_LoginViewController.swift */; };
@@ -40,19 +43,23 @@
 		C5FABD56294F65B20054B09E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C5FABD55294F65B20054B09E /* SnapKit */; };
 		C5FABD59294F66520054B09E /* UIColorHexSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C5FABD58294F66520054B09E /* UIColorHexSwift */; };
 		C5FABD5B294F67D60054B09E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FABD5A294F67D60054B09E /* Theme.swift */; };
+		D9BBB76952681FA74239595E /* Pods_course_work.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09E5F8B559655B1528AC805 /* Pods_course_work.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA19436B0F9238C5D731038A /* Pods-course-work.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-course-work.debug.xcconfig"; path = "Target Support Files/Pods-course-work/Pods-course-work.debug.xcconfig"; sourceTree = "<group>"; };
 		C52BD0AC29671CCD00DB1490 /* FoodCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCard.swift; sourceTree = "<group>"; };
 		C52BD0AE29671D3E00DB1490 /* InfoTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTag.swift; sourceTree = "<group>"; };
 		C52BD0B029672BDB00DB1490 /* FoodDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailedViewController.swift; sourceTree = "<group>"; };
 		C52BD0B52967422300DB1490 /* HeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
 		C5336309296078B6001FBB41 /* FoodListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListTableViewController.swift; sourceTree = "<group>"; };
 		C5417B472952193C0008D0A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C549E06E298AACE60033906D /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		C5518BFE2968543B0064A951 /* TabHeadersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHeadersViewController.swift; sourceTree = "<group>"; };
 		C5518C00296867320064A951 /* WebContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentViewController.swift; sourceTree = "<group>"; };
 		C559947B296DAA7200AD2912 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C55F98AF2958E20A003F80F5 /* func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = func.swift; sourceTree = "<group>"; };
+		C56EB66129880A6600206366 /* BookmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewModel.swift; sourceTree = "<group>"; };
 		C57D66EF29614AFC00016040 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
 		C5833BA7296B17910064F60D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C5833BA9296B1E9A0064F60D /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +81,8 @@
 		C5FABD4A294F5EFE0054B09E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5FABD4C294F5EFE0054B09E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5FABD5A294F67D60054B09E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E09E5F8B559655B1528AC805 /* Pods_course_work.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_course_work.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2395C1536BC853F2A3B98F /* Pods-course-work.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-course-work.release.xcconfig"; path = "Target Support Files/Pods-course-work/Pods-course-work.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +94,31 @@
 				C5F3E1F629724C2200E48B5A /* Alamofire in Frameworks */,
 				C5FABD59294F66520054B09E /* UIColorHexSwift in Frameworks */,
 				C5FABD56294F65B20054B09E /* SnapKit in Frameworks */,
+				D9BBB76952681FA74239595E /* Pods_course_work.framework in Frameworks */,
+				C5E7380F298DA6660057C289 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BF0CA5D07B65BE420617A40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E09E5F8B559655B1528AC805 /* Pods_course_work.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB3629A1CA09A2DD40F9071A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA19436B0F9238C5D731038A /* Pods-course-work.debug.xcconfig */,
+				FA2395C1536BC853F2A3B98F /* Pods-course-work.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C52BD0B4296741DA00DB1490 /* food-detailed-screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +135,7 @@
 			children = (
 				C559947B296DAA7200AD2912 /* LoginViewModel.swift */,
 				C5B1DBF92982E20100F69E40 /* HomeViewModel.swift */,
+				C56EB66129880A6600206366 /* BookmarkViewModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -115,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				C55F98AF2958E20A003F80F5 /* func.swift */,
+				C549E06E298AACE60033906D /* SessionManager.swift */,
+				C5A16E41295F6FD800583448 /* WaveViewController.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -162,7 +193,6 @@
 			children = (
 				C5336309296078B6001FBB41 /* FoodListTableViewController.swift */,
 				C5A16E43295F73B600583448 /* CategoryViewController.swift */,
-				C5A16E41295F6FD800583448 /* WaveViewController.swift */,
 				C5A16E3F295F681400583448 /* BannerViewController.swift */,
 				C5A16E3D295F667F00583448 /* GreetingViewController.swift */,
 			);
@@ -196,6 +226,8 @@
 			children = (
 				C5FABD3D294F5EFD0054B09E /* course-work */,
 				C5FABD3C294F5EFD0054B09E /* Products */,
+				BB3629A1CA09A2DD40F9071A /* Pods */,
+				1BF0CA5D07B65BE420617A40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5FABD4F294F5EFE0054B09E /* Build configuration list for PBXNativeTarget "course-work" */;
 			buildPhases = (
+				677D04DF71149F635E967585 /* [CP] Check Pods Manifest.lock */,
 				C5FABD37294F5EFD0054B09E /* Sources */,
 				C5FABD38294F5EFD0054B09E /* Frameworks */,
 				C5FABD39294F5EFD0054B09E /* Resources */,
+				CDA4BED9200C9B2454406640 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +287,7 @@
 				C5FABD58294F66520054B09E /* UIColorHexSwift */,
 				C5F3E1F529724C2200E48B5A /* Alamofire */,
 				C5D57C5329854B4400DD3728 /* Kingfisher */,
+				C5E7380E298DA6660057C289 /* RiveRuntime */,
 			);
 			productName = "course-work";
 			productReference = C5FABD3B294F5EFD0054B09E /* course-work.app */;
@@ -287,6 +322,7 @@
 				C5FABD57294F66520054B09E /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */,
 				C5F3E1F429724C2200E48B5A /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C5D57C5229854B4400DD3728 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C5E7380D298DA6660057C289 /* XCRemoteSwiftPackageReference "rive-ios" */,
 			);
 			productRefGroup = C5FABD3C294F5EFD0054B09E /* Products */;
 			projectDirPath = "";
@@ -309,6 +345,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		677D04DF71149F635E967585 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-course-work-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDA4BED9200C9B2454406640 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-course-work/Pods-course-work-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-course-work/Pods-course-work-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-course-work/Pods-course-work-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C5FABD37294F5EFD0054B09E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -319,6 +397,7 @@
 				C5A16E44295F73B600583448 /* CategoryViewController.swift in Sources */,
 				C559947C296DAA7200AD2912 /* LoginViewModel.swift in Sources */,
 				C57D66F029614AFC00016040 /* Spacer.swift in Sources */,
+				C549E06F298AACE60033906D /* SessionManager.swift in Sources */,
 				C5417B482952193C0008D0A5 /* HomeViewController.swift in Sources */,
 				C5B1DBFA2982E20100F69E40 /* HomeViewModel.swift in Sources */,
 				C5518C01296867320064A951 /* WebContentViewController.swift in Sources */,
@@ -338,6 +417,7 @@
 				C5FABD41294F5EFD0054B09E /* SceneDelegate.swift in Sources */,
 				C55F98B02958E20A003F80F5 /* func.swift in Sources */,
 				C52BD0B62967422300DB1490 /* HeaderViewController.swift in Sources */,
+				C56EB66229880A6600206366 /* BookmarkViewModel.swift in Sources */,
 				C533630A296078B6001FBB41 /* FoodListTableViewController.swift in Sources */,
 				C52BD0B129672BDB00DB1490 /* FoodDetailedViewController.swift in Sources */,
 				C5F7F6A62985A0FD00CB3ECF /* Configure_LoginViewController.swift in Sources */,
@@ -474,6 +554,7 @@
 		};
 		C5FABD50294F5EFE0054B09E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA19436B0F9238C5D731038A /* Pods-course-work.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -500,6 +581,7 @@
 		};
 		C5FABD51294F5EFE0054B09E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2395C1536BC853F2A3B98F /* Pods-course-work.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -556,6 +638,14 @@
 				kind = branch;
 			};
 		};
+		C5E7380D298DA6660057C289 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		C5F3E1F429724C2200E48B5A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -587,6 +677,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C5D57C5229854B4400DD3728 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		C5E7380E298DA6660057C289 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5E7380D298DA6660057C289 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
 		};
 		C5F3E1F529724C2200E48B5A /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
